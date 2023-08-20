@@ -1,0 +1,57 @@
+@import "../../globalStyles.scss";
+
+.normalTextField{
+    padding: 2rem 0;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 1rem;
+        h2{
+            font-weight: 300;
+            color: $blue;
+        }
+        a{
+            font-size: 2rem;
+            color: black;
+            &:hover{
+                opacity: 70%;
+            }
+        }
+    }
+
+    p{
+        margin-bottom: 1rem;
+        &:last-child{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.dualTextField{
+    padding: 2rem 0;
+    display: flex;
+    article{
+        width: 50%;
+        h2{
+            font-weight: 300;
+            color: $blue;
+            margin-bottom: 1rem;
+        }
+        p{
+            margin-bottom: 1rem;
+            &:last-child{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .dualTextField{
+        flex-direction: column;
+        article{
+            width: 100%;
+        }
+    }
+}

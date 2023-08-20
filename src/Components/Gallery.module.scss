@@ -1,0 +1,23 @@
+@import "../globalStyles.scss";
+.gallery{
+    h3{
+        font-size: 2rem;
+        color: black;
+        padding-bottom: 2rem;
+    }
+    div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+        padding-bottom: 4rem;
+        img{
+            aspect-ratio: 1/1;
+            width: 100%;
+            filter: grayscale(1);
+            transition: filter 0.4s;
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+    }
+}
